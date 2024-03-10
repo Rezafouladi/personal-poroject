@@ -1,0 +1,149 @@
+/*
+==============
+general css code
+============== 
+ */
+body {
+  margin: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li {
+  font-family: "Poppins", sans-serif;
+}
+/*
+==============
+header css code
+============== 
+ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > nav > ul > li {
+      display: inline-block;
+      margin-left: 12px;
+      > a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+    > nav ul li:first-of-type a {
+      color: #8490ff;
+    }
+    > nav ul li a:hover {
+      color: #8490ff;
+    }
+  }
+}
+/*
+==============
+main first css code
+============== 
+ */
+#main-first {
+  background-color: #f9f9ff;
+  padding-top: 137px;
+  .container {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    > div {
+      margin-right: 50px;
+    }
+    > #main-first-left {
+      margin-bottom: 120px;
+      > span {
+        font-size: 14px;
+      }
+      > h1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin: 25px 0;
+        color: #222222;
+      }
+      > p {
+        width: 470px;
+        color: #777777;
+        line-height: 20px;
+        font-size: 14px;
+      }
+      > a {
+        text-decoration: none;
+        color: white;
+        background-color: #8490ff;
+        padding: 13px 30px;
+        font-size: 13px;
+        line-height: 55px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+/*
+==============
+main about me css code
+============== 
+ */
+#main-about {
+  padding-top: 120px;
+  .container {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    > img {
+      width: 550px;
+      margin-right: 50px;
+    }
+    > #about-me {
+      margin-right: 35px;
+      > span {
+        font-size: 14px;
+      }
+      > h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 40px 0;
+        color: #222222;
+      }
+      > p {
+        width: 397px;
+        color: #777777;
+        line-height: 25px;
+        font-size: 14px;
+      }
+      > a {
+        text-decoration: none;
+        color: white;
+        background-color: #8490ff;
+        padding: 13px 30px;
+        font-size: 13px;
+        line-height: 55px;
+        font-weight: bold;
+      }
+    }
+  }
+}
