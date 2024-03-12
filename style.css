@@ -37,21 +37,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    > nav > ul > li {
-      display: inline-block;
-      margin-left: 12px;
-      > a {
-        text-decoration: none;
-        color: black;
-        font-size: 12px;
-        padding: 6px;
+    > nav {
+      > ul > li {
+        display: inline-block;
+        position: relative;
+        margin-left: 12px;
+        > a {
+          text-decoration: none;
+          color: black;
+          font-size: 12px;
+          padding: 6px;
+        }
       }
-    }
-    > nav ul li:first-of-type a {
-      color: #8490ff;
-    }
-    > nav ul li a:hover {
-      color: #8490ff;
+      > ul li a:hover {
+        color: #8490ff;
+      }
+      > ul > li > ul {
+        position: absolute;
+        right: 0;
+        top: 200%;
+        width: max-content;
+        display: none; 
+        padding: 5px;
+        > li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            background-color: white;
+            padding: 10px 100px 10px 10px;
+          }
+        }
+      }
+      > ul > li:hover > ul {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
